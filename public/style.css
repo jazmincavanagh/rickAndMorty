@@ -1,0 +1,36 @@
+
+h1 {
+
+    font-style: italic;
+    color: blue
+}
+
+.header{
+    background: aquamarine;
+    font-style: italic;
+}
+.App{
+    background: rgb(228, 185, 215);
+}
+
+.footer {
+    font-style: italic;
+    color: blue;
+    background: aquamarine;
+    text-decoration: none;
+}
+
+h3.uk-card-title{
+    font-weight: bold;
+}
+
+div{
+    text-align: center !important;
+}
+
+
+
+
+
+
+
