@@ -1,9 +1,10 @@
 import Tarjetas from './components/Tarjetas'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import { Component } from 'react'
 
-
-function App() {
+export default class App extends Component {
+  render(){
   return (
     <div className="App">
     
@@ -18,6 +19,6 @@ function App() {
    
     </div>
   );
+  }
 }
 
-export default App;

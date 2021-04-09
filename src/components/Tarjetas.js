@@ -1,17 +1,23 @@
 import arrayPersonajes from '../rickandmorty.json'
 import Personajes from './Personajes'
-function Tarjetas(){
- 
+import { Component } from 'react';
 
-    return (
-        
+class Tarjetas extends Component{
+    
+    borrar(){
+
+    }
+
+    render(){
+    return (      
         <div className="container-fluid">
+            <button className="reset"> Reset </button>
         <div className="row">
         {
             arrayPersonajes.map(function(personaje, idx){
                 return(
-                    <div className="col-md-4">
-                    <Personajes key={idx} datosPersonaje = {personaje} />
+                    <div className="col-md-4" >
+                    <Personajes key={idx} datosPersonaje = {personaje} colorOriginal="pink"/>
                     </div>
                 )
             })
@@ -19,6 +25,9 @@ function Tarjetas(){
         </div>
         </div>
     )
+    }
+
+    
 
 
 

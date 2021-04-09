@@ -32,6 +32,25 @@ ul{
     list-style: none;
 }
 
+.cambiarColor{
+    color: green;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+.borrar {
+    color:red;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+.reset {
+    color: blue;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
 
 
 
