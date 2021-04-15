@@ -3,9 +3,16 @@ import Personajes from './Personajes'
 import { Component } from 'react';
 
 class Tarjetas extends Component{
-    
-    borrar(){
-
+   constructor(){
+       super();
+        this.state ={
+            personajes: arrayPersonajes,
+            
+       }
+   } 
+    borrarPersonaje(idPersonaje){
+        
+        console.log("tarjeta a borrar: " + idPersonaje)
     }
 
     render(){
@@ -14,10 +21,10 @@ class Tarjetas extends Component{
             <button className="reset"> Reset </button>
         <div className="row">
         {
-            arrayPersonajes.map(function(personaje, idx){
+            this.state.personajes.map((personaje, idx)=>{
                 return(
                     <div className="col-md-4" >
-                    <Personajes key={idx} datosPersonaje = {personaje} colorOriginal="pink"/>
+                    <Personajes key={idx} datosPersonaje = {personaje} color="white" onDelete={this.borrarPersonaje.bind(this)} id={personaje.id}/>
                     </div>
                 )
             })

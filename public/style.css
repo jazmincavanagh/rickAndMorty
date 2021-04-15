@@ -33,19 +33,19 @@ ul{
 }
 
 .cambiarColor{
-    color: green;
+    background-color: grey;
     border-radius: 20px;
     padding: 10px;
     font-weight: bold;
 }
 .borrar {
-    color:red;
+    background-color:grey;
     border-radius: 20px;
     padding: 10px;
     font-weight: bold;
 }
 .reset {
-    color: blue;
+    background-color: grey;
     border-radius: 20px;
     padding: 10px;
     font-weight: bold;
